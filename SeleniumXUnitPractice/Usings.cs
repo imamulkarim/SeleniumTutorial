@@ -1,0 +1,12 @@
+global using Xunit;
+global using OpenQA.Selenium;
+global using OpenQA.Selenium.Chrome;
+global using OpenQA.Selenium.Interactions;
+global using OpenQA.Selenium.Support.UI;
+global using WebDriverManager;
+global using WebDriverManager.DriverConfigs.Impl;
+global using WebDriverManager.Helpers;
+global using OpenQA.Selenium.Support;
+global using AngleSharp.Common;
+global using SeleniumExtras.WaitHelpers;
+global using OpenQA.Selenium.Firefox;

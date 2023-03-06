@@ -1,0 +1,5 @@
+{
+  "parallelizeAssembly": true,
+  "parallelizeTestCollections": true
+}
+//make property copy always

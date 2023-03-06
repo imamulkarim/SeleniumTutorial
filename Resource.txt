@@ -1,0 +1,93 @@
+Cheat Sheet
+
+https://www.lambdatest.com/blog/selenium-locators-cheat-sheet/
+
+https://www.lambdatest.com/blog/locators-in-selenium-webdriver-with-examples/
+XPath: //tagname[@attribute = 'value']
+
+Standard XPath
+driver.findElement(By.xpath("//input[@name= ’email’]"));
+XPath Contains
+<input type="text" placeholder="Full Name*" name="name" value="" class="form-control sign-up-input-2 ">
+driver.findElement(By.xpath("//input[contains(@class, ‘form-control’)]"))
+
+XPath using ‘AND’ & ‘OR’
+//input[@id='login_1' OR @name='login’]
+driver.findElement(By.xpath("//input[@type='email' OR @name='email']"));
+
+//tagname[starts-with(@attribute,'starting name of the attribute value')]
+driver.findElement(By.xpath("//input[starts-with(@name,'pass')]"));
+
+//div[text()='Logged In']
+driver.findElement(By.xpath("//button[text()='Free Sign Up']"));
+
+Tag and ID in CSS Selector
+driver.findElement(By.cssSelector("button.submit-btn"))
+
+https://www.lambdatest.com/support/docs/selenium-automation-capabilities/
+https://automation.lambdatest.com/build
+
+3 ways to run se Grid
+Different Grid Types
+    Standalone Mode
+    Classical Grid (Hub and Node like earlier versions)
+    hub - c#,php,java,python,etc
+    node- mobile,android,pc linux
+    Fully Distributed (Router, Distributor, Session, and Node)
+
+
+Hub consisted of three processes – Router, Session Map, and Distributor. Selenium 4 has a new architecture that supports four separate processes – Router, Session Map, Distributor, and Node.
+
+    Router – Listens to the new session request.
+    Distributor – Selects the appropriate node where the test should be executed.
+    Session Map – Maps the session ID to the node.
+    Node – Test machine where the test execution takes place
+
+
+https://www.lambdatest.com/support/docs/c-with-selenium-running-c-automation-scripts-on-lambdatest-selenium-grid/
+https://www.lambdatest.com/capabilities-generator/
+
+
+driver.executeScript('lambda-status=failed')
+driver.executeScript('lambda-status=passed')
+driver.executeScript('lambda-name=Your_test_name')
+
+https://www.lambdatest.com/support/docs/error-messages/
+
+try {
+    // some GET request
+    Assert.assertEquals(ActualValue, ExpectedValue);
+} catch (AssertionError e) {
+    Status = "failed";
+    exceptionCapture.add(e.getMessage());
+    ((JavascriptExecutor) driver).executeScript("lambda-exceptions", exceptionCapture);
+}
+
+Lambda Hooks For Selenium Automation
+https://www.lambdatest.com/support/docs/lambda-hooks/
+
+https://www.lambdatest.com/support/docs/download-files-using-lambdatest-selenium-grid/
+
+https://www.lambdatest.com/support/docs/queuing/
+
+https://www.lambdatest.com/support/docs/selenium-tests-behind-proxy/
+
+https://www.lambdatest.com/support/docs/selenium-visual-regression/
+driver.executeScript("smartui.takeFullPageScreenshot=<Your Screenshot Name>")
+
+https://www.guru99.com/selenium-tutorial.html
+//drpCountry.selectByValue("234");
+drpCountry.selectByIndex(0);
+drpCountry.deselectAll();
+selectByVisibleText()/
+selectByValue()/
+
+Robot  todo
+AutoIT
+
+https://www.guru99.com/ssl-certificate-error-handling-selenium.html
+DesiredCapabilities handlSSLErr = DesiredCapabilities.chrome ()       
+handlSSLErr.setCapability (CapabilityType.ACCEPT_SSL_CERTS, true)
+WebDriver driver = new ChromeDriver (handlSSLErr);
+
+sing SoapUI with Selenium for Web Service Tes
