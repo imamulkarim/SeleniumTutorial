@@ -8,9 +8,14 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3E29F746-CC71-4216-9AB2-93C1505C8F9F}"
 	ProjectSection(SolutionItems) = preProject
 		Resource.txt = Resource.txt
+		..\..\..\OneDrive\Desktop\Untitled.png = ..\..\..\OneDrive\Desktop\Untitled.png
+		..\..\..\OneDrive\Desktop\Untitled2.png = ..\..\..\OneDrive\Desktop\Untitled2.png
+		..\..\..\OneDrive\Desktop\Untitled3.png = ..\..\..\OneDrive\Desktop\Untitled3.png
+		..\..\..\OneDrive\Desktop\Untitled4.png = ..\..\..\OneDrive\Desktop\Untitled4.png
+		..\..\..\OneDrive\Desktop\Untitled5.png = ..\..\..\OneDrive\Desktop\Untitled5.png
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeleniumXUnitPractice", "SeleniumXUnitPractice\SeleniumXUnitPractice.csproj", "{113E5BB0-3C0E-46B5-85C8-3EA26E0CEB05}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SeleniumXUnitPractice", "SeleniumXUnitPractice\SeleniumXUnitPractice.csproj", "{113E5BB0-3C0E-46B5-85C8-3EA26E0CEB05}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

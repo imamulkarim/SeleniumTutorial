@@ -1,4 +1,6 @@
 Cheat Sheet
+3.47
+https://www.youtube.com/watch?v=gOC_lCz2zXs&t=5s
 
 https://www.lambdatest.com/blog/selenium-locators-cheat-sheet/
 

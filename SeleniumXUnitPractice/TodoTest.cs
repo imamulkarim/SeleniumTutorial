@@ -1,4 +1,6 @@
 
+using OpenQA.Selenium.Interactions;
+
 [assembly: CollectionBehavior(CollectionBehavior.CollectionPerClass , MaxParallelThreads =4)]
 namespace SeleniumXUnitPractice
 {
@@ -12,8 +14,11 @@ namespace SeleniumXUnitPractice
 		{
 			new DriverManager().SetUpDriver(new ChromeConfig(), VersionResolveStrategy.MatchingBrowser);
 			_driver = new ChromeDriver();
+			//_driver = new InternetExplorerDriver
 			_webDriverWait = new WebDriverWait(_driver, TimeSpan.FromSeconds(WAIT_FOR_ELEMENT_TIMEOUT));
 			_actions = new Actions(_driver);
+			_driver.Navigate().Refresh();
+
 		}
 
 		public void Dispose()
@@ -52,6 +57,7 @@ namespace SeleniumXUnitPractice
 
 		private void validateInnerTextIs(IWebElement resultSpan,string expectedText)
 		{
+			resultSpan.di
 			_webDriverWait.Until(ExpectedConditions.TextToBePresentInElement(resultSpan, expectedText));
 		}
 
@@ -77,6 +83,23 @@ namespace SeleniumXUnitPractice
 		{
 			var technolgyLink = waitAndFindElement(By.LinkText(name));
 			technolgyLink.Click();
+		}
+
+		private void WaitUntilPageLoadCompletely()
+		{
+			var js = ((IJavaScriptExecutor)_driver);
+			_webDriverWait.Until(wd => js.ExecuteScript("return document.readyState").ToString() == "complete");
+			_webDriverWait.Until(wd => js.ExecuteScript("return JQuery.active").ToString() == "0");
+
+
+		}
+		private void ScrollToElement(IWebElement element)
+		{
+			//var action = new Actions(_driver);
+			////oraction.MoveToElement(element).Perform();
+			//or
+			((IJavaScriptExecutor)_driver).ExecuteScript("arguments[0].scrollIntoView(true);" ,element);
+
 		}
 	}
 }

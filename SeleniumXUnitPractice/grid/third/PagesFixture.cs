@@ -9,7 +9,6 @@ namespace SeleniumXUnitPractice.grid.third
 {
 	public class PagesFixture : IDisposable
 	{
-		//3.13.12
 		//public PagesFixture() {
 		//	MainPage = new MainPage(DriverFixture.Driver.Value);
 		//	TodoPageApp = new TodoPageApp(DriverFixture.Driver.Value);

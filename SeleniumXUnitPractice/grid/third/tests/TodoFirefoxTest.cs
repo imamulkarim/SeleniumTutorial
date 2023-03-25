@@ -4,16 +4,16 @@ using SeleniumXUnitPractice.grid.third.runs;
 
 namespace SeleniumXUnitPractice.grid.third
 {
-	public class TodoFirefoxTest : IClassFixture<TestDataFixture> 
+	public class TodoFirefoxTest : IClassFixture<DriverFixture>,IClassFixture<TestDataFixture> 
 	{
 		
-		//3.27
+		//3.34
 		//private readonly FirefoxDriverFixture _fixture;
 		//private readonly PagesFixture _pageFixture;
 		private readonly TestDataFixture _testFixture;
 
 		public TodoFirefoxTest(
-			//FirefoxDriverFixture fixture, 
+			DriverFixture fixture, 
 			TestDataFixture testFixture
 			//,PagesFixture pageFixture
 			)
@@ -28,7 +28,8 @@ namespace SeleniumXUnitPractice.grid.third
 		//	_driver.Quit();
 		//}
 		//[Fact]
-		[Theory]
+		//[Theory]
+		[BrowserRunTheroy]
 		[InlineData("Vanilla JS")]
 		//[InlineData("JQuery")]
 		[InlineData("Dojo")]

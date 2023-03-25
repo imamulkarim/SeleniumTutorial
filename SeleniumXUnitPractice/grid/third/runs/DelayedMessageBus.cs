@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Xunit.Abstractions;
 using Xunit.Sdk;
 
-namespace SeleniumXUnitPractice.third.runs
+namespace SeleniumXUnitPractice.grid.third.runs
 {
 	public class DelayedMessageBus : IMessageBus
 	{

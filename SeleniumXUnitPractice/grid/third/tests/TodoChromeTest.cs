@@ -20,18 +20,18 @@ namespace SeleniumXUnitPractice.grid.third
 		//private readonly ChromeDriverFixture _fixture;
 		//private readonly PagesFixture _pageFixture;
 
-		//public TodoChromeTest(ChromeDriverFixture fixture, PagesFixture pageFixture)
-		//{
-		//	this._fixture = fixture;
-		//	_pageFixture = pageFixture;
-		//}
+		public TodoChromeTest(DriverFixture fixture)
+		{
+			
+		}
 
 		//public void Dispose()
 		//{
 		//	_driver.Quit();
 		//}
 		//[Fact]
-		[Theory]
+		//[Theory]
+		[BrowserRunTheroy]
 		[InlineData("Vanilla JS")]
 		//[InlineData("JQuery")]
 		[InlineData("Dojo")]

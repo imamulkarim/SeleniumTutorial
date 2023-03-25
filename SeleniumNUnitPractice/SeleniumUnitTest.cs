@@ -2,6 +2,7 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Edge;
 using static System.Net.Mime.MediaTypeNames;
 using System.ComponentModel;
+using NUnit.Framework;
 
 namespace SeleniumNUnitPractice
 {
@@ -16,7 +17,7 @@ namespace SeleniumNUnitPractice
 			driver = new EdgeDriver();
 		}
 
-		[Test]
+		[Test, Order(1)]
 		public void ValidateTheMessageIsDisplayed()
 		{
 			driver.Navigate().GoToUrl("https://www.lambdatest.com/selenium-playground/simple-form-demo");
